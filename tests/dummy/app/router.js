@@ -6,5 +6,7 @@ var Router = Ember.Router.extend(Piwik, {
   location: config.locationType
 });
 
-export default Router.map(function() {
+Router.map(function () {
 });
+
+export default Router;
