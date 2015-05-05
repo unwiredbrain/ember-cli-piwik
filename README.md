@@ -1,22 +1,45 @@
-# Ember-cli-piwik
+# ember-cli-piwik
 
-This README outlines the details of collaborating on this Ember addon.
+Inject the Piwik tracking code into an ember-cli application.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+**This addon requires ember-cli version >= 0.0.47**
 
-## Running
+Run the following:
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+```bash
+npm install --save-dev ember-cli-piwik
+```
+
+## Configuration
+
+TODO
+
+## Usage
+
+TODO
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
+First clone this repo:
+
+```bash
+git clone https://github.com/unwiredbrain/ember-cli-piwik
+```
+
+Retrieve all the dependecies:
+
+```bash
+npm install
+```
+
+Run the tests:
+
+```bash
+ember test
+ember test --server
+```
 
 ## Building
 

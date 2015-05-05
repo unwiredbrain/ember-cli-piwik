@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-piwik",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Inject the Piwik tracking code into an ember-cli application",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,18 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unwiredbrain/ember-cli-piwik.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unwiredbrain/ember-cli-piwik/issues"
+  },
+  "homepage": "https://github.com/unwiredbrain/ember-cli-piwik",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Massimo Lombardo <unwiredbrain@gmail.com> (https://twitter.com/unwiredbrain)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
@@ -34,7 +41,10 @@
     "ember-try": "0.0.4"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "piwik",
+    "analytics",
+    "web analytics"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.0.0"

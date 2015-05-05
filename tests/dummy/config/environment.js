@@ -13,6 +13,10 @@ module.exports = function(environment) {
       }
     },
 
+    piwik: {
+      url: 'ember-cli-piwik.example.com'
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -25,6 +29,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.piwik.sid = 2;
   }
 
   if (environment === 'test') {
@@ -37,10 +42,13 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV.piwik.sid = 2;
+    // ENV.piwik.url = 'piwik.example.com';
   }
 
   if (environment === 'production') {
-
+    ENV.piwik.sid = 5;
   }
 
   return ENV;
