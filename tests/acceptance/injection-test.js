@@ -1,22 +1,22 @@
-import Ember from 'ember';
 import {
   module,
   test
 } from 'qunit';
-import startApp from '../helpers/start-app';
+import Ember from 'ember';
 import config from '../../config/environment';
+import startApp from '../helpers/start-app';
 
 
-var App;
+var application;
 
 
-module('Acceptance - Injection', {
+module('acceptance:injection', {
   beforeEach: function () {
-    App = startApp();
+    application = startApp();
   },
 
   afterEach: function () {
-    Ember.run(App, 'destroy');
+    Ember.run(application, 'destroy');
   }
 });
 

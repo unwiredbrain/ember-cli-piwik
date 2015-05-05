@@ -29,7 +29,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.piwik.sid = 2;
+
+    // You can have one for dev...
+    ENV.piwik.sid = 11;
   }
 
   if (environment === 'test') {
@@ -43,12 +45,13 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
 
-    ENV.piwik.sid = 2;
-    // ENV.piwik.url = 'piwik.example.com';
+    // One for CI...
+    ENV.piwik.sid = 17;
   }
 
   if (environment === 'production') {
-    ENV.piwik.sid = 5;
+    // And one for production. It's up to your needs.
+    ENV.piwik.sid = 23;
   }
 
   return ENV;

@@ -3,7 +3,7 @@
 
 
 var templates = {
-  head: '<script>var _paq=[["setSiteId",{{PIWIK_SID}}],["setTrackerUrl","//{{PIWIK_URL}}/piwik.php"],["trackPageView"],["enableLinkTracking"]]</script>',
+  head: '<script>var _paq=[["setSiteId",{{PIWIK_SID}}],["setTrackerUrl","//{{PIWIK_URL}}/piwik.php"],["enableLinkTracking"]]</script>',
   body: '<script src="//{{PIWIK_URL}}/piwik.js" async defer></script>'
 };
 
