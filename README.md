@@ -137,13 +137,12 @@ documentation][3].
 
 ## Running Tests
 
-Clone this repo, install the dependencies, then run the tests:
+Clone this project, install the dependencies, then run the tests:
 
 ```bash
-$ git clone https://github.com/unwiredbrain/ember-cli-piwik
-$ npm install
-$ ember test
-$ ember test --server
+$ git clone https://github.com/unwiredbrain/ember-cli-piwik.git
+$ npm install && bower install
+$ npm test
 ```
 
 ## Acknowledgements
