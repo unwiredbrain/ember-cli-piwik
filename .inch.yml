@@ -1,0 +1,8 @@
+---
+files:
+  included:
+    - addon/**/*.js
+    - app/**/*.js
+    - index.js
+  excluded:
+    - !regexp:/vendor/

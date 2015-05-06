@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-piwik",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Inject the Piwik tracking code into an ember-cli application",
   "directories": {
     "doc": "doc",

@@ -1,5 +1,9 @@
 # ember-cli-piwik
 
+[![Build Status](https://travis-ci.org/unwiredbrain/ember-cli-piwik.svg?branch=master)](https://travis-ci.org/unwiredbrain/ember-cli-piwik)
+[![Dependency Status](https://david-dm.org/unwiredbrain/ember-cli-piwik.svg?branch=master)](https://david-dm.org/unwiredbrain/ember-cli-piwik)
+[![Inline docs](http://inch-ci.org/github/unwiredbrain/ember-cli-piwik.svg?branch=master)](http://inch-ci.org/github/unwiredbrain/ember-cli-piwik)
+
 Inject the Piwik tracking code into an ember-cli application.
 
 **Please note that this is not production-ready software** and that it may lack 
