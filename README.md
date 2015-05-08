@@ -29,7 +29,7 @@ environments:
 ```javascript
 piwik: {
   sid: 123,
-  url: 'your-piwik.endpoint.com'
+  url: 'https://your-piwik.endpoint.com'
 }
 ```
 
@@ -39,7 +39,7 @@ You can have independent site IDs and URLs per environment, for example:
 if (environment === 'development') {
   ENV.piwik = {
     sid: 3,
-    url: 'your.piwik.domain/and/path'
+    url: 'http://your.piwik.domain/and/path'
   }
 }
 
@@ -48,7 +48,7 @@ if (environment === 'development') {
 if (environment === 'production') {
   ENV.piwik = {
     sid: 7,
-    url: 'another-piwik.endpoint.com'
+    url: '//another-piwik.endpoint.com'
   }
 }
 ```
@@ -58,11 +58,11 @@ a situation, the best approach is the following:
 
 ```javascript
 // config/environment.js
-module.exports = function (environment) {
+module.exports = function(environment) {
   var ENV = {
     // ...
     piwik: {
-      url: 'piwik.endpoint.com'
+      url: 'https://piwik.endpoint.com'
     },
     // ...
   };
@@ -104,7 +104,7 @@ var Router = Ember.Router.extend(Piwik, {
   location: config.locationType
 });
 
-Router.map(function () {
+Router.map(function() {
   // ...
 });
 
