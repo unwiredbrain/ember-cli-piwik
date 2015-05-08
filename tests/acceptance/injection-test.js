@@ -3,35 +3,30 @@ import {
   test
 } from 'qunit';
 import Ember from 'ember';
-import config from '../../config/environment';
 import startApp from '../helpers/start-app';
-
+import config from '../../config/environment';
 
 var application;
 
-
 module('acceptance:injection', {
-  beforeEach: function () {
+  beforeEach: function() {
     application = startApp();
   },
 
-  afterEach: function () {
+  afterEach: function() {
     Ember.run(application, 'destroy');
   }
 });
 
-
-test('should inject two script tags in the html', function (assert) {
+test('should inject two script tags in the html', function(assert) {
   assert.expect(4);
 
   visit('/');
-  andThen(function () {
-    var sid, php, js;
-
+  andThen(function() {
     // Use the values from the dummy config
-    sid = config.piwik.sid;
-    php = config.piwik.url + '/piwik.php';
-    js = config.piwik.url + '/piwik.js';
+    var sid = config.piwik.sid;
+    var php = config.piwik.url + '/piwik.php';
+    var js = config.piwik.url + '/piwik.js';
 
     // Make sure the _paq object is there after the injection
     assert.ok(Ember.isArray(window._paq), 'initialization script has been injected');

@@ -1,7 +1,6 @@
 /* global _paq */
 import Ember from 'ember';
 
-
 /**
  * Implements the logic to use the Piwik tracker to send pageview events.
  *
@@ -26,7 +25,10 @@ export default Ember.Mixin.create({
    * @member {Function} trackPiwikPageView
    * @since 0.0.2
    */
-  trackPiwikPageView: Ember.on('didTransition', function () {
-    _paq.push([ 'trackPageView', Ember.get(this, 'url') ]);
+  trackPiwikPageView: Ember.on('didTransition', function() {
+    _paq.push([
+      'trackPageView',
+      Ember.get(this, 'url')
+    ]);
   })
 });

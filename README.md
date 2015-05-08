@@ -58,7 +58,7 @@ a situation, the best approach is the following:
 
 ```javascript
 // config/environment.js
-module.exports = function (environment) {
+module.exports = function(environment) {
   var ENV = {
     // ...
     piwik: {
@@ -104,7 +104,7 @@ var Router = Ember.Router.extend(Piwik, {
   location: config.locationType
 });
 
-Router.map(function () {
+Router.map(function() {
   // ...
 });
 
