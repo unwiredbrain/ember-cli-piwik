@@ -27,7 +27,7 @@ module('mixin:page-view-tracker', {
 test('it works', function (assert) {
   var PageViewTrackerObject = Ember.Object.extend(PageViewTrackerMixin);
   var subject = PageViewTrackerObject.create();
-  assert.ok(subject);
+  assert.ok(subject, 'can be consumed by objects');
 });
 
 
@@ -42,6 +42,6 @@ test('shoud call the tracker when transitioning into a route', function (assert)
 
   visit('/');
   andThen(function () {
-    assert.equal(called, true);
+    assert.equal(called, true, 'transitioning into route triggers a call to `_paq.push`');
   });
 });

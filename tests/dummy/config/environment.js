@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },
 
     piwik: {
-      url: 'ember-cli-piwik.example.com'
+      url: 'https://ember-cli-piwik.example.com'
     },
 
     APP: {
@@ -47,6 +47,7 @@ module.exports = function(environment) {
 
     // One for CI...
     ENV.piwik.sid = 17;
+    ENV.piwik.url = '//ember-cli-piwik.example.com/network-path/reference';
   }
 
   if (environment === 'production') {
