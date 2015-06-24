@@ -2,12 +2,14 @@ bower_components/
 tests/
 tmp/
 
+**/.gitkeep
 .bowerrc
 .editorconfig
 .ember-cli
-.travis.yml
+.gitignore
 .npmignore
-**/.gitkeep
+.travis.yml
 bower.json
+inch.json
 Brocfile.js
 testem.json
