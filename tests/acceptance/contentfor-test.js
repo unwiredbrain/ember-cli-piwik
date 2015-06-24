@@ -1,14 +1,11 @@
-import {
-  module,
-  test
-} from 'qunit';
+import { module, test } from 'qunit';
 import Ember from 'ember';
 import startApp from '../helpers/start-app';
 import config from '../../config/environment';
 
 var application;
 
-module('acceptance:injection', {
+module('acceptance:contentfor', {
   beforeEach: function() {
     application = startApp();
   },
@@ -18,10 +15,11 @@ module('acceptance:injection', {
   }
 });
 
-test('should inject two script tags in the html', function(assert) {
+test('should inject two script tags in the built html page', function(assert) {
   assert.expect(4);
 
   visit('/');
+
   andThen(function() {
     // Use the values from the dummy config
     var sid = config.piwik.sid;

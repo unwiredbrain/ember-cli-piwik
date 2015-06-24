@@ -14,7 +14,8 @@ module.exports = function(environment) {
     },
 
     piwik: {
-      url: 'https://ember-cli-piwik.example.com'
+      url: 'https://ember-cli-piwik.example.com',
+      debug: true
     },
 
     APP: {
